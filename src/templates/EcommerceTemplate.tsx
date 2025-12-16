@@ -45,7 +45,7 @@ export const EcommerceTemplate = ({
   const { hasCollections, loading: loadingCollections } = useCollections()
 
   const header = (
-    <div className={`py-2 ${headerClassName}`}>
+    <div className={`py-4 border-b sticky top-0 bg-background/95 backdrop-blur-sm z-50 ${headerClassName}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -57,20 +57,20 @@ export const EcommerceTemplate = ({
               {!loadingCollections && hasCollections && (
                 <ScrollLink 
                   to="/#collections" 
-                  className="text-foreground/70 hover:text-foreground transition-colors"
+                  className="text-foreground/70 hover:text-foreground transition-colors font-medium"
                 >
                   Collections
                 </ScrollLink>
               )}
               <ScrollLink 
                 to="/#products" 
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-foreground/70 hover:text-foreground transition-colors font-medium"
               >
                 Products
               </ScrollLink>
               <Link 
                 to="/blog" 
-                className="text-foreground/70 hover:text-foreground transition-colors"
+                className="text-foreground/70 hover:text-foreground transition-colors font-medium"
               >
                 Blog
               </Link>
@@ -91,7 +91,7 @@ export const EcommerceTemplate = ({
               >
                 <ShoppingCart className="h-5 w-5" />
                 {totalItems > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 gradient-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center shadow-lg">
                     {totalItems > 99 ? '99+' : totalItems}
                   </span>
                 )}
@@ -103,7 +103,7 @@ export const EcommerceTemplate = ({
         {/* Page Title */}
         {pageTitle && (
           <div className="mt-6">
-            <h1 className="text-3xl font-bold text-foreground">
+            <h1 className="text-3xl font-bold">
               {pageTitle}
             </h1>
           </div>
@@ -113,27 +113,33 @@ export const EcommerceTemplate = ({
   )
 
   const footer = (
-    <div className={`bg-black text-white py-12 ${footerClassName}`}>
+    <div className={`bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white py-16 ${footerClassName}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
-          <div>
+          <div className="md:col-span-2">
             <BrandLogoLeft />
-            <p className="mt-4 text-white/70">
-              Your trusted online store
+            <p className="mt-4 text-white/80 max-w-md">
+              Your marketplace for new and pre-loved accessories. Buy with confidence, sell with ease.
             </p>
           </div>
 
-          {/* Links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Links</h3>
-            <div className="space-y-2">
-              <Link 
-                to="/" 
+            <h3 className="font-bold mb-4 text-white">Explore</h3>
+            <div className="space-y-3">
+              <ScrollLink 
+                to="/#collections" 
                 className="block text-white/70 hover:text-white transition-colors"
               >
-                Home
-              </Link>
+                Collections
+              </ScrollLink>
+              <ScrollLink 
+                to="/#products" 
+                className="block text-white/70 hover:text-white transition-colors"
+              >
+                All Products
+              </ScrollLink>
               <Link 
                 to="/blog" 
                 className="block text-white/70 hover:text-white transition-colors"
@@ -145,13 +151,19 @@ export const EcommerceTemplate = ({
 
           {/* Social Links */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Follow Us</h3>
+            <h3 className="font-bold mb-4 text-white">Connect</h3>
             <SocialLinks />
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/70">
-          <p>&copy; 2025 Your Store. All rights reserved.</p>
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/60 text-sm">
+            &copy; 2025 AccessMarket. All rights reserved.
+          </p>
+          <div className="flex gap-6 text-sm text-white/60">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
     </div>
