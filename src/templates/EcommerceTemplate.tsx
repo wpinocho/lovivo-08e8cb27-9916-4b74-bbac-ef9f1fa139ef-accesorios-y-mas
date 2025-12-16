@@ -113,14 +113,14 @@ export const EcommerceTemplate = ({
   )
 
   const footer = (
-    <div className={`bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 text-white py-16 ${footerClassName}`}>
+    <div className={`bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 ${footerClassName}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
             <BrandLogoLeft />
             <p className="mt-4 text-white/80 max-w-md">
-              Your marketplace for new and pre-loved accessories. Buy with confidence, sell with ease.
+              The marketplace for men. Quality tools, tech, and accessories - new and pre-owned. Find the perfect gift or sell your gear.
             </p>
           </div>
 
@@ -158,7 +158,7 @@ export const EcommerceTemplate = ({
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/60 text-sm">
-            &copy; 2025 AccessMarket. All rights reserved.
+            &copy; 2025 MenMarket. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-white/60">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

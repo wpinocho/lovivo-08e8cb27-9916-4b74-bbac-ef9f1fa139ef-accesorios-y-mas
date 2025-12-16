@@ -47,17 +47,17 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
           <div className="max-w-3xl">
             <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur-sm">
               <Sparkles className="h-3 w-3 mr-1" />
-              New & Pre-Loved Accessories
+              Tools, Gadgets & Accessories for Men
             </Badge>
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Buy & Sell
+              The Marketplace
               <br />
-              <span className="text-white/90">Accessories</span>
+              <span className="text-white/90">for Men</span>
             </h1>
             
             <p className="text-xl text-white/90 mb-8 max-w-xl">
-              Join our marketplace community. Find unique accessories or sell your items with ease.
+              Find the perfect gift for your partner. Shop tools, tech, and quality accessories. Or sell what you no longer use.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -67,7 +67,7 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
                 onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <ShoppingBag className="h-5 w-5 mr-2" />
-                Start Shopping
+                Shop Now
               </Button>
               <Button 
                 size="lg" 
@@ -76,7 +76,7 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
                 onClick={() => window.location.href = '/seller-dashboard'}
               >
                 <Recycle className="h-5 w-5 mr-2" />
-                Sell Your Items
+                Sell Your Gear
               </Button>
             </div>
           </div>
@@ -91,9 +91,9 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <Sparkles className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-bold text-lg mb-2">New Arrivals Daily</h3>
+              <h3 className="font-bold text-lg mb-2">Quality Products</h3>
               <p className="text-muted-foreground text-sm">
-                Fresh products added every day from verified sellers
+                New and pre-owned items from verified sellers
               </p>
             </div>
             
@@ -101,9 +101,9 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <ShoppingBag className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-bold text-lg mb-2">Secure Shopping</h3>
+              <h3 className="font-bold text-lg mb-2">Perfect Gifts</h3>
               <p className="text-muted-foreground text-sm">
-                Safe payments and buyer protection on every order
+                Find the ideal gift for him - tools, tech, and more
               </p>
             </div>
             
@@ -111,9 +111,9 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <Recycle className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-bold text-lg mb-2">Sustainable Choice</h3>
+              <h3 className="font-bold text-lg mb-2">Sell Your Gear</h3>
               <p className="text-muted-foreground text-sm">
-                Give items a second life and shop sustainably
+                Turn unused tools and gadgets into cash easily
               </p>
             </div>
           </div>
@@ -129,7 +129,7 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
                 Shop by <span className="gradient-text">Category</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Browse our curated collections of accessories
+                Tools, tech, accessories - everything he needs
               </p>
             </div>
             
@@ -160,7 +160,7 @@ export const IndexUI = ({ logic }: IndexUIProps) => {
               <p className="text-muted-foreground">
                 {selectedCollectionId 
                   ? 'Explore this collection' 
-                  : 'Discover our best accessories'
+                  : 'Discover quality products for men'
                 }
               </p>
             </div>

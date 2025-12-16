@@ -29,17 +29,17 @@ export const NewsletterSection = () => {
                   Thanks for subscribing!
                 </h3>
                 <p className="text-muted-foreground">
-                  You'll receive our best offers and promotions soon.
+                  You'll get first access to new arrivals and special deals.
                 </p>
               </div>
             ) : (
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-foreground">
-                    Want promotional emails?
+                    Get the Best Deals
                   </h3>
                   <p className="text-lg text-muted-foreground">
-                    Subscribe to our newsletter and get exclusive offers
+                    Subscribe for exclusive offers on tools, tech, and gear
                   </p>
                 </div>
                 

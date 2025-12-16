@@ -56,14 +56,14 @@ export const ProductCardUI = ({ product }: ProductCardUIProps) => {
                     </Badge>
                   )}
                   {isNew && (
-                    <Badge className="gradient-primary text-white shadow-sm">
+                    <Badge className="bg-primary text-primary-foreground shadow-sm">
                       <Sparkles className="h-3 w-3 mr-1" />
                       New
                     </Badge>
                   )}
                   {isSecondHand && (
-                    <Badge variant="secondary" className="shadow-sm">
-                      Second Hand
+                    <Badge className="bg-accent text-accent-foreground shadow-sm">
+                      Pre-Owned
                     </Badge>
                   )}
                   {!logic.inStock && (

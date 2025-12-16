@@ -66,7 +66,7 @@ const SellerDashboard = () => {
               Welcome back, <span className="gradient-text">{user.email?.split('@')[0]}</span>!
             </h1>
             <p className="text-muted-foreground">
-              Manage your products and track your sales
+              Manage your listings and track your earnings
             </p>
           </div>
 
@@ -136,7 +136,7 @@ const SellerDashboard = () => {
                 <div className="relative z-10">
                   <h3 className="text-xl font-bold mb-2">Start Selling</h3>
                   <p className="text-white/90 mb-4">
-                    List your accessories and reach thousands of buyers
+                    List your tools, gadgets, or gear and reach buyers
                   </p>
                   <Button 
                     size="lg" 
@@ -195,7 +195,7 @@ const SellerDashboard = () => {
                 <Package className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">No products yet</h3>
                 <p className="text-muted-foreground mb-6">
-                  Start selling by listing your first item
+                  Turn your unused gear into cash - list your first item
                 </p>
                 <Button>
                   <Plus className="h-4 w-4 mr-2" />
